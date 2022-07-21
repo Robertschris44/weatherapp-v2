@@ -21,6 +21,7 @@
 
     <center>
     <main class="">
+        <!--will add boot strap later-->
         <div>
             <div class="form" id="search-form">
                 <h2 class="box-head">Search City</h2>
@@ -30,16 +31,26 @@
                     </div>
                     <div class="form-btn">
                         <button type="submit" id="citySubmit" class="btn-submit">Get Forecast</button>
-
                     </div>
-
-
                 </form>
-
-
-
             </div>
 
+            <div class="card id" id="History">
+                <h3 id="searches">History</h3>
+                <ul class="list-group" id="recents"></ul>
+            </div>
+        </div>
+        <!--Will add boot strap later-->
+        <div>
+            <div id="current-card"></div>
+            <h2 class="card-header" id="currentDate">Today in the city</h2>
+            <p class="p2" id="currentStatus">Current Weather</p>
+        </div>
+        <div id="cardWeather">
+            <div id="extendedWeather">
+                <h2>Five Day Weather Forecast</h2>
+                <ul id="five-day-list-item"></ul>
+            </div>
         </div>
 
 
