@@ -24,8 +24,13 @@ var formSubmit =function(event) {
 
     searchCity.appendChild(listEl);
 
-    
+    var cityInput = cityEl.value.trim();
+    if (cityInput) {
+        getForecast(cityInput);
+    }
 
+    formSearch.reset();
+};
 
 
 
