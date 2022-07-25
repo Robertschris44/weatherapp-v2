@@ -13,6 +13,18 @@ var formSubmit =function(event) {
     var searchCity = document.querySelector("input[name='inputCity']").value;
 
     var listEl = document.createElement("li");
+    listEl.className = "search-item";
+
+    var searchInfoEl = document.createElement("div");
+     
+    searchInfoEl.className = "search-info";
+
+    searchInfoEl.innerHTML = "<h3 class=searchCity'>" + searchCity + "</h3>";
+    listEl.appendChild(searchCity);
+
+    searchCity.appendChild(listEl);
+
+    
 
 
 
