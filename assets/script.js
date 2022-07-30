@@ -13,6 +13,19 @@ var storedCities = JSON.parse (localStorage.getItem("storedCites")) || [];
 
 for (var i =0; i <storedCities.length; i ++) {
     var city = storedCities[i];
+    var cityEl = $("<li>");
+    cityEl.addclass("btn list-group");
+    cityEl.textContent(city);
+    $("#city-list").append(cityEl);
 }
+
+searchButton.click(function(){
+    console.log ("btnwasclicked")
+    searchInput = $("#inputcity").val().trim();
+    var previousSavedCities = JSON.parse(localStorage.getItem("storedCites")) || []
+    previousSavedCities.push(searchInput)
+    localStorage.setItem("storedCities", JSON.stringify(previousSavedCities))
+    getUserlocation(searchInput); 
+});
 
 
